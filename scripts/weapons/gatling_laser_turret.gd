@@ -62,7 +62,7 @@ func _fireshot():
 		var target_distance = ship_by_distance["distance"]
 
 		# skip ships on our team
-		if _ship.info.team == ship.info.team:
+		if _ship.combat_team() == ship.combat_team():
 			continue
 		
 		# calculate the angle to target
@@ -118,7 +118,7 @@ func _fireshot():
 	var spread_val := randf_range(-spread, spread)
 	var final_rot := deg_to_rad(target_rot + spread_val)
 	var inertia := Vector2(cos(ship.rotation), sin(ship.rotation)) * ship.speed + Vector2(ship.vx, ship.vy)
-	var proj := Projectile.create_from_info("Miniature Laser Pulse", ship.info.team, spawn_pos, final_rot, inertia)
+	var proj := Projectile.create_from_info("Miniature Laser Pulse", ship.combat_team(), spawn_pos, final_rot, inertia)
 	if proj:
 		ship.get_parent().add_child(proj)
 

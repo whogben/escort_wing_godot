@@ -18,7 +18,6 @@ const MS_LAUNCH_BTN_OFFSET = MS_LAUNCH_BTN_POS - MS_CENTER
 const MS_RADIUS = 460.0
 const MS_ANGLE_STEP = 15.0
 const MS_BG_RADIUS = 1000.0
-const MS_ARROW_RADIUS = 550.0
 const MS_BACK_BTN_POS = Vector2(24, 24)
 const RM_PANEL_LEFT = 280.0
 
@@ -85,8 +84,6 @@ var ms_anchor: Control
 var ms_labels_container: Control
 var ms_launch_btn: Label
 var ms_back_btn: Label
-var ms_up_arrow: Control
-var ms_down_arrow: Control
 var ms_score_labels: Array[Label] = []
 var transition_overlay: Control
 
@@ -104,6 +101,7 @@ var rm_escort_label: Label
 var rm_enemy_label: Label
 var rm_ship_caption: Label
 var rm_launch_btn: Label
+var rm_back_btn: Label
 var rm_playable_ships: Array[String] = []
 var rm_ship_index: int = 0
 var rm_player_team: int = 1
@@ -259,6 +257,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	# Dismiss-on-outside-click runs here so GUI controls consume clicks first.
 	if current_state == MenuState.RANDOM_MISSION:
 		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			if rm_back_btn != null and rm_back_btn.get_global_rect().has_point(event.global_position):
+				return
 			if event.global_position.x < RM_PANEL_LEFT - 30.0:
 				_play_ui_sound("impact_1")
 				_transition_from_random_mission()
@@ -446,7 +446,6 @@ func _build_mission_select_container():
 	for i in range(levels.size()):
 		ms_labels_container.add_child(_create_mission_label(i))
 	
-	_build_ms_arrows()
 	_update_ms_rotation(true) # Instant update
 	
 	# Launch button stays fixed relative to the mission-select anchor (left of the wheel).
@@ -1051,49 +1050,6 @@ func _on_menu_item_clicked(event: InputEvent, index: int):
 				get_tree().quit()
 
 
-# --- Mission select arrows ---
-
-func _build_ms_arrows() -> void:
-	ms_up_arrow = _make_ms_arrow(deg_to_rad(195.0), _on_ms_up_arrow_clicked)
-	ms_down_arrow = _make_ms_arrow(deg_to_rad(160.0), _on_ms_down_arrow_clicked)
-	ms_anchor.add_child(ms_up_arrow)
-	ms_anchor.add_child(ms_down_arrow)
-
-
-func _make_ms_arrow(angle_rad: float, handler: Callable) -> Control:
-	var arrow := Control.new()
-	var offset := Vector2(cos(angle_rad), sin(angle_rad)) * MS_ARROW_RADIUS
-	arrow.position = offset - Vector2(25, 25)
-	arrow.custom_minimum_size = Vector2(50, 50)
-	arrow.mouse_filter = Control.MOUSE_FILTER_PASS
-	arrow.gui_input.connect(handler)
-	arrow.draw.connect(func() -> void:
-		arrow.draw_circle(Vector2(25, 25), 25, Color(1, 1, 1, 0.35))
-		arrow.draw_arc(Vector2(25, 25), 25, 0, TAU, 32, Color(1, 1, 1, 0.8), 2.0, true)
-	)
-	return arrow
-
-
-func _on_ms_up_arrow_clicked(event: InputEvent) -> void:
-	if current_state != MenuState.MISSION_SELECT:
-		return
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		if ms_selection > 0:
-			ms_selection -= 1
-			_play_ui_sound("impact_1")
-			_update_ms_rotation()
-
-
-func _on_ms_down_arrow_clicked(event: InputEvent) -> void:
-	if current_state != MenuState.MISSION_SELECT:
-		return
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		if ms_selection < _max_unlocked_index():
-			ms_selection += 1
-			_play_ui_sound("impact_1")
-			_update_ms_rotation()
-
-
 # --- Settings ---
 
 func _settings_row_text(item: Dictionary) -> String:
@@ -1295,13 +1251,26 @@ func _build_random_mission_container() -> void:
 
 	rm_launch_btn = Label.new()
 	rm_launch_btn.text = "Launch"
-	rm_launch_btn.position = MS_LAUNCH_BTN_POS - Vector2(60, 20)
+	rm_launch_btn.position = Vector2(panel_x1, panel_y1 - 70)
+	rm_launch_btn.custom_minimum_size = Vector2(slider_width, 40)
+	rm_launch_btn.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	if menu_font:
 		rm_launch_btn.add_theme_font_override("font", menu_font)
 	rm_launch_btn.add_theme_font_size_override("font_size", MENU_FONT_SIZE)
 	rm_launch_btn.gui_input.connect(_on_rm_launch_clicked)
 	rm_launch_btn.mouse_filter = Control.MOUSE_FILTER_PASS
 	random_mission_container.add_child(rm_launch_btn)
+
+	rm_back_btn = Label.new()
+	rm_back_btn.text = "Back"
+	rm_back_btn.position = MS_BACK_BTN_POS
+	if menu_font:
+		rm_back_btn.add_theme_font_override("font", menu_font)
+	rm_back_btn.add_theme_font_size_override("font_size", SETTINGS_FONT_SIZE)
+	rm_back_btn.add_theme_color_override("font_color", Color.WHITE)
+	rm_back_btn.gui_input.connect(_on_rm_back_clicked)
+	rm_back_btn.mouse_filter = Control.MOUSE_FILTER_PASS
+	random_mission_container.add_child(rm_back_btn)
 
 	_refresh_random_mission_ui()
 
@@ -1391,6 +1360,14 @@ func _on_rm_launch_clicked(event: InputEvent) -> void:
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		_launch_random_mission()
+
+
+func _on_rm_back_clicked(event: InputEvent) -> void:
+	if current_state != MenuState.RANDOM_MISSION:
+		return
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		_play_ui_sound("impact_1")
+		_transition_from_random_mission()
 
 
 func _launch_random_mission() -> void:

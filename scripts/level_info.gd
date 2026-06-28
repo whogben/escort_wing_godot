@@ -22,6 +22,9 @@ var randomize_background_rgb: bool = false
 var medium: String = "air"
 
 var player_ship: String = ""
+## Random / procedural missions: allies (player, convoy, escorts, end ships) fight as this faction.
+## 0 = use each ship's `.sfo` team (campaign levels).
+var player_team: int = 0
 var convoy_heading: int = 0
 
 # Lists of ShipSpawn objects

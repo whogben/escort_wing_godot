@@ -69,7 +69,7 @@ func _fireshot():
 	var spread_val := randf_range(-spread, spread)
 	var final_rot := deg_to_rad(rot + spread_val)
 	var inertia := Vector2(cos(rot_rad), sin(rot_rad)) * ship.speed + Vector2(ship.vx, ship.vy)
-	var proj := Projectile.create_from_info("Standard Laser Pulse", ship.info.team, spawn_pos, final_rot, inertia)
+	var proj := Projectile.create_from_info("Standard Laser Pulse", ship.combat_team(), spawn_pos, final_rot, inertia)
 	if proj:
 		ship.get_parent().add_child(proj)
 	

@@ -37,7 +37,7 @@ func check_collisions(delta: float):
 		# Skip dead ships or friendly fire
 		if ship.health <= 0:
 			continue
-		if ship.info and ship.info.team == team:
+		if ship.info and ship.combat_team() == team:
 			continue
 			
 		if _collide_with_ship(ship, delta):

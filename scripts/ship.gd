@@ -10,6 +10,9 @@ class_name Ship
 ## Ship info. Uses the info name to get the info.
 var info: ShipInfo = null
 
+## When >= 0, overrides `info.team` for weapons and AI (random missions unify allies).
+var combat_team_override: int = -1
+
 ## Flight speed in pixels per second.
 var speed: float = 0.0
 
@@ -86,6 +89,14 @@ func _is_truespace() -> bool:
 
 
 ## Forward speed along the ship's nose. In air this is `speed`; in truespace it is the velocity projection.
+func combat_team() -> int:
+	if combat_team_override >= 0:
+		return combat_team_override
+	if info:
+		return info.team
+	return 0
+
+
 func forward_speed() -> float:
 	if _is_truespace():
 		var forward := Vector2(cos(rotation), sin(rotation))

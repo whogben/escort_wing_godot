@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1782637707|402149266';
+const CACHE_VERSION = '1782688534|1914380';
 /** @type {string} */
 const CACHE_PREFIX = 'escort_wing_godo-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;

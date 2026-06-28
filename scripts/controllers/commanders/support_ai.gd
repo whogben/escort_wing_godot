@@ -41,7 +41,7 @@ func _scan_for_targets():
 	var min_dist_sq = ENGAGEMENT_RANGE * ENGAGEMENT_RANGE
 	
 	for potential in GameState.ships:
-		if potential.info and potential.info.team != team and potential.health > 0:
+		if potential.info and potential.combat_team() != team and potential.health > 0:
 			var d = ship.global_position.distance_squared_to(potential.global_position)
 			if d < min_dist_sq:
 				min_dist_sq = d
@@ -69,7 +69,7 @@ func _find_new_escort_target():
 			continue
 		if not is_instance_valid(potential) or potential.health <= 0:
 			continue
-		if potential.info and potential.info.team != team:
+		if potential.info and potential.combat_team() != team:
 			continue
 
 		var d = ship.global_position.distance_squared_to(potential.global_position)

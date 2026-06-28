@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 
 	# Ensure team is synced
 	if ship.info:
-		team = ship.info.team
+		team = ship.combat_team()
 		
 	# Reset intentions (AI is stateless per frame)
 	ship.turn_intent = 0.0

@@ -19,7 +19,7 @@ func _process(_delta: float):
 		var target = ship_entry["ship"]
 		var dist = ship_entry["distance"]
 		
-		if target.info.team != ship.info.team:
+		if target.combat_team() != ship.combat_team():
 			if dist < (r + target.info.radius):
 				_realfire()
 				break
@@ -34,7 +34,7 @@ func _realfire():
 	# Explode
 	# explosion.create(g, team, x, y, range*1.1, 20*400000, power, 0.1)
 	var exp_node = Explosion.new()
-	exp_node.setup_explosion(ship.position, ship.info.team, base_range * 1.1, 8000000.0, power, 0.1)
+	exp_node.setup_explosion(ship.position, ship.combat_team(), base_range * 1.1, 8000000.0, power, 0.1)
 	
 	ship.get_parent().add_child(exp_node)
 	

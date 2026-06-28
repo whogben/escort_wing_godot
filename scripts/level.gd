@@ -117,7 +117,7 @@ func start():
 	
 	# Spawn Player
 	# Player starts at 0,0 usually? Level.bmx: craft.create(0,0...)
-	player = _create_ship(info.player_ship, Vector2.ZERO, deg_to_rad(info.convoy_heading))
+	player = _create_ship(info.player_ship, Vector2.ZERO, deg_to_rad(info.convoy_heading), true)
 	if player:
 		# Add HumanController
 		var ctrl = HumanController.new()
@@ -454,7 +454,7 @@ func _create_convoy_and_escorts(bx: float, by: float):
 		var x = bx + randf_range(-jitter_max, jitter_max)
 		var y = by + randf_range(-jitter_max, jitter_max)
 		
-		var ship = _create_ship(ship_spawn.ship_info_name, Vector2(x, y), convoy_heading_rad)
+		var ship = _create_ship(ship_spawn.ship_info_name, Vector2(x, y), convoy_heading_rad, true)
 		if ship:
 			var ctrl := AIController.new()
 			ctrl.current_behavior = _BEHAVIOR_CONVOY.new() as AIBehavior
@@ -482,7 +482,7 @@ func _create_convoy_and_escorts(bx: float, by: float):
 			var ymod = 150 * sin(deg_to_rad(rot))
 			rot += rot_step
 			
-			var ship = _create_ship(ship_spawn.ship_info_name, Vector2(bx + xmod, by + ymod), convoy_heading_rad)
+			var ship = _create_ship(ship_spawn.ship_info_name, Vector2(bx + xmod, by + ymod), convoy_heading_rad, true)
 			if ship:
 				var ctrl = SupportAI.new() # convoySupportAI
 				ctrl.ship = ship
@@ -515,7 +515,7 @@ func _time_spawn_end_ships():
 			var x = spawn_pos.x + randf_range(-jitter, jitter)
 			var y = spawn_pos.y + randf_range(-jitter, jitter)
 			
-			var ship = _create_ship(ship_spawn.ship_info_name, Vector2(x, y), heading + PI)
+			var ship = _create_ship(ship_spawn.ship_info_name, Vector2(x, y), heading + PI, true)
 			if ship:
 				var ctrl = SupportAI.new()
 				ctrl.ship = ship
@@ -593,7 +593,7 @@ func _spawn_escort_reinforcements(x: float, y: float, ships: Array, jitter_max: 
 	for ship_spawn in ships:
 		var sx = x + randf_range(-jitter_max, jitter_max)
 		var sy = y + randf_range(-jitter_max, jitter_max)
-		var ship = _create_ship(ship_spawn.ship_info_name, Vector2(sx, sy), deg_to_rad(info.convoy_heading + 180))
+		var ship = _create_ship(ship_spawn.ship_info_name, Vector2(sx, sy), deg_to_rad(info.convoy_heading + 180), true)
 		if ship:
 			var ctrl = SupportAI.new()
 			ctrl.ship = ship
@@ -668,11 +668,13 @@ func _update_bg_color_fade(delta: float) -> void:
 	if factor >= 1.0:
 		_bg_fade_active = false
 
-func _create_ship(info_name: String, pos: Vector2, rot: float) -> Ship:
+func _create_ship(info_name: String, pos: Vector2, rot: float, mission_ally: bool = false) -> Ship:
 	var ship = Ship.new()
 	ship.info_name = info_name
 	ship.position = pos
 	ship.rotation = rot
+	if mission_ally and info.player_team > 0:
+		ship.combat_team_override = info.player_team
 	add_child(ship)
 	# Ship _ready will register it
 	return ship

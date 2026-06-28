@@ -123,7 +123,7 @@ func _target_closest_enemy_unit():
 	var closest_dist_sq: float = INF
 	
 	for s in GameState.ships:
-		if s.info and s.info.team != team and s.health > 0:
+		if s.info and s.combat_team() != team and s.health > 0:
 			var dist_sq = ship.global_position.distance_squared_to(s.global_position)
 			if dist_sq < closest_dist_sq:
 				closest_dist_sq = dist_sq

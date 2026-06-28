@@ -86,7 +86,7 @@ func _update_seeking(delta: float) -> void:
 		for s in GameState.ships:
 			if not is_instance_valid(s) or s.health <= 0.0:
 				continue
-			if s.info.team == team:
+			if s.combat_team() == team:
 				continue
 			var dist := global_position.distance_squared_to(s.global_position)
 			if target_ship == null or dist < best_dist:
@@ -138,7 +138,7 @@ func check_collisions(delta: float) -> void:
 	for ship in GameState.ships:
 		if ship.health <= 0.0:
 			continue
-		if ship.info and ship.info.team == team:
+		if ship.info and ship.combat_team() == team:
 			continue
 		if death_effect == "explosion":
 			var det := length

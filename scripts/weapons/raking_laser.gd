@@ -36,7 +36,7 @@ func _process(delta: float):
 		for ship_entry in GameState.get_ships_by_distance(ship.position):
 			var target = ship_entry["ship"]
 			
-			if target.info.team == ship.info.team:
+			if target.combat_team() == ship.combat_team():
 				continue
 				
 			# Recalculate distance using global positions for safety

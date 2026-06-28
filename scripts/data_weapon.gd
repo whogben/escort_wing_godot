@@ -206,7 +206,7 @@ func _nearest_enemy_angle() -> float:
 	for s in GameState.ships:
 		if not is_instance_valid(s) or s.health <= 0.0:
 			continue
-		if s.info.team == ship.info.team:
+		if s.combat_team() == ship.combat_team():
 			continue
 		var dist := Vector2(tx, ty).distance_squared_to(s.global_position)
 		if dist < mindist:
@@ -223,12 +223,12 @@ func _check_mine_proximity() -> void:
 	for s in GameState.ships:
 		if not is_instance_valid(s) or s.health <= 0.0:
 			continue
-		if s.info.team == ship.info.team:
+		if s.combat_team() == ship.combat_team():
 			continue
 		var dist := ship.global_position.distance_to(s.global_position)
 		if dist <= range_val + s.info.radius:
 			var ex := Explosion.new()
-			ex.setup_explosion(ship.global_position, ship.info.team, range_val * 1.1, 20.0 * 400000.0, ship.health, 0.1)
+			ex.setup_explosion(ship.global_position, ship.combat_team(), range_val * 1.1, 20.0 * 400000.0, ship.health, 0.1)
 			ship.get_parent().add_child(ex)
 			ship.health = 0.0
 			return
@@ -335,7 +335,7 @@ func _fire_from_turret(turret: int) -> void:
 			var inertia := Vector2.ZERO
 			if _has_inertia():
 				inertia = Vector2(cos(ship.rotation), sin(ship.rotation)) * ship.speed + Vector2(ship.vx, ship.vy)
-			var proj := Projectile.create_from_info(p_info.name, ship.info.team, Vector2(tx, ty), firing_angle, inertia)
+			var proj := Projectile.create_from_info(p_info.name, ship.combat_team(), Vector2(tx, ty), firing_angle, inertia)
 			ship.get_parent().add_child(proj)
 		elif ShipInfo.named(bullet_name):
 			_spawn_ship_projectile(bullet_name, Vector2(tx, ty), firing_angle)
@@ -362,7 +362,7 @@ func _facing_angle_deg(turret: int) -> float:
 		for s in GameState.ships:
 			if not is_instance_valid(s) or s.health <= 0.0:
 				continue
-			if s.info.team == ship.info.team:
+			if s.combat_team() == ship.combat_team():
 				continue
 			var dist := Vector2(tx, ty).distance_squared_to(s.global_position)
 			if dist < mindist:
@@ -419,7 +419,7 @@ func _update_raking(delta: float) -> void:
 		for s in GameState.ships:
 			if not is_instance_valid(s) or s.health <= 0.0:
 				continue
-			if s.info.team == ship.info.team:
+			if s.combat_team() == ship.combat_team():
 				continue
 			var sq := Vector2(tx, ty).distance_squared_to(s.global_position)
 			if sq < last_dist and Collision.segment_hits_circle(Vector2(tx, ty), Vector2(tx + cos(firing_angle) * range_val, ty + sin(firing_angle) * range_val), s.global_position, float(s.info.radius)):
@@ -475,7 +475,7 @@ func _draw_tracer(off: Vector2, spec: WeaponInfo.SpecialEntry) -> void:
 		for s in GameState.ships:
 			if not is_instance_valid(s) or s.health <= 0.0:
 				continue
-			if s.info.team == ship.info.team:
+			if s.combat_team() == ship.combat_team():
 				continue
 			var sq := world_from.distance_squared_to(s.global_position)
 			if sq < line_len * line_len:

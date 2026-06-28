@@ -48,7 +48,7 @@ static func weapon_should_fire(w: Weapon) -> bool:
 	for s in ships:
 		if not is_instance_valid(s) or s.health <= 0.0:
 			continue
-		if s.info.team == w.ship.info.team:
+		if s.combat_team() == w.ship.combat_team():
 			continue
 		if base_pos.distance_squared_to(s.global_position) < mindistsqr:
 			return true

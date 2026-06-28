@@ -23,7 +23,6 @@ RunState="*res://scripts/run_state.gd"
 
 window/size/viewport_width=1024
 window/size/viewport_height=768
-window/size/mode=0
 
 [input]
 

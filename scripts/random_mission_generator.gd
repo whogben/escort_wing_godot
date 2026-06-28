@@ -38,13 +38,14 @@ static func build_random_mission(
 	var info := LevelInfo.load_level(path)
 	if info == null:
 		return null
+	info.convoy_ships.clear()
+	info.convoy_survivors.clear()
+	info.escort_ships.clear()
+	info.end_ships.clear()
 	if not append_template:
-		info.convoy_ships.clear()
-		info.convoy_survivors.clear()
-		info.escort_ships.clear()
-		info.end_ships.clear()
 		info.events.clear()
 	info.player_ship = player_ship
+	info.player_team = playerteam
 	var scaled_escort := float(escort_strength) / 5.0 + 0.5
 	var scaled_enemy := float(enemy_strength) / 5.0 + 0.5
 	setup_random_convoy(info, convoysize)
