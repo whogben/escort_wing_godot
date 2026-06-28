@@ -1,0 +1,578 @@
+// Escort Level File
+
+LEVEL NAME: 
+Bramble's Choice
+
+LEVEL DESC:
+Thousands of Tel-Rith and Human deserters mass their forces near Echo base.    Many ships lost to both sides in the war against the Tel-Rith are found amongst the deserters, modified to accommodate Human and Tel-Rith technology.  Meanwhile, the war rages on.  The Tel-Rith seem oblivious to the deserter threat, and supplies are in need all across the front-lines.  One such supply convoy must pass through the edge of deserter territory, dubbed the "Pirate Seas."  No convoy has made it through before, but confidence in Captain Bramble's team is high.
+
+LEVEL WIN DESC:
+Good work %N!  Thanks for playing, I'm sorry its unfinished but I hope you enjoyed it.  Please vote for this and other games in the OMG contest, and email suggestions / comments to whogben@gmail.com.  Look in the data folder, and look at the levels and the ship infos, you can mod them, and add new levels and new ships yourself!  If you make a neat conversion please send it to me!  I'll let you figure out how to do that :D    Thanks for playing %N, I hope to see you around :D   -Will Hogben                              One more thing...  An easter egg for dedicated players who read that whole debrief:  Try holding shift and tab in game...
+
+LEVEL BACKGROUND:
+Ocean
+
+LEVEL RGB:
+.5
+.4
+.3
+
+LEVEL GROUND CLOUD COVER:
+0
+
+LEVEL AIR CLOUD COVER:
+13
+
+
+
+
+LEVEL SUCCESS MINUTES AND SECONDS:
+5
+00
+
+
+CONVOY HEADING DEGREES:
+135
+
+
+PLAYER SHIP:
+Flak Interceptor
+
+CONVOY ESCORT SHIPS:
+{
+1
+Bramble's Flak Interceptor
+2
+Interceptor
+}
+
+
+LEVEL CONVOY SHIPS:
+{
+4
+Freighter
+}
+
+CONVOY SHIPS MUST SURVIVE:
+{
+2
+Freighter
+}
+
+
+
+
+
+
+LEVEL START SHIPS:
+{
+10
+Interceptor
+20
+Freighter
+4
+Radar Freighter
+}
+
+
+LEVEL END SHIPS:
+{
+4
+Interceptor
+1
+Flak Interceptor
+4
+Plasma Frigate
+4
+Radar Freighter
+}
+
+
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+0
+{
+SET MUSIC:
+Waiting
+}
+
+
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+1
+{
+RADIO SENDER:
+Pilot Bob Jorrath [Interceptor Pilot]
+
+RADIO MESSAGE:
+Nice ship captain, I like the *bling*.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+6
+{
+RADIO SENDER:
+Pilot Bob Jorrath [Interceptor Pilot]
+
+RADIO MESSAGE:
+I hate these creepy night-flights.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+14
+{
+RADIO SENDER:
+Officer Mikhail Prior [MilTel & Communications]
+
+RADIO MESSAGE:
+Captain, we're entering "pirate" territory.
+}
+
+EVENT MINUTES AND SECONDS:
+0
+24
+{
+RADIO SENDER:
+Captain Jake Bramble [Escort Team Commander]
+
+RADIO MESSAGE:
+Keep your wits about you.  Remember, we've fought alongside some of these guys.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+32
+{
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+There they are!
+
+SPAWN ENEMY SHIPS:
+{
+2
+Pirate Interceptor
+2
+Pirate Tel-Rith Fighter
+}
+SPAWN ANGLE:
+135
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+15
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Desert your ranks and join our brotherhood.
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+20
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Tel-Rith and Human become one with us.
+
+SPAWN ENEMY SHIPS:
+{
+4
+Pirate Interceptor
+4
+Pirate Tel-Rith Fighter
+}
+SPAWN ANGLE:
+135
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+25
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Drop your petty hatreds.
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+27
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Join us.
+}
+
+EVENT MINUTES AND SECONDS:
+1
+32
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Your politics are nothing.  We are all brothers.
+}
+
+EVENT MINUTES AND SECONDS:
+1
+37
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Forget your factions, embrace your enemies, defect and join us!
+}
+
+EVENT MINUTES AND SECONDS:
+1
+42
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Desert your ranks and join our brotherhood.
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+47
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Tel-Rith and Human become one with us.
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+52
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Drop your petty hatreds.
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+55
+{
+RADIO SENDER:
+Pirates
+
+RADIO MESSAGE:
+Join us.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+00
+{
+RADIO SENDER:
+Officer Mikhail Prior
+
+RADIO MESSAGE:
+Captain, I'm going to disrupt these signals.
+}
+
+EVENT MINUTES AND SECONDS:
+2
+08
+{
+RADIO SENDER:
+Officer Mikhail Prior
+
+RADIO MESSAGE:
+Captain?
+}
+
+EVENT MINUTES AND SECONDS:
+2
+14
+{
+RADIO SENDER:
+Officer Mikhail Prior
+
+RADIO MESSAGE:
+Captain, do you want me to filter out the signals?
+}
+
+
+EVENT MINUTES AND SECONDS:
+2
+22
+{
+RADIO SENDER:
+Captain Jake Bramble
+
+RADIO MESSAGE:
+Do what you have to.
+
+}
+
+
+EVENT MINUTES AND SECONDS:
+2
+28
+{
+RADIO SENDER:
+Officer Mikhail Prior
+
+RADIO MESSAGE:
+Where are you going?
+
+RETIRE ESCORT SHIPS:
+{
+1
+Bramble's Flak Interceptor
+}
+ANGLE:
+135
+}
+
+EVENT MINUTES AND SECONDS:
+2
+34
+{
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+What are you doing!
+
+}
+
+
+EVENT MINUTES AND SECONDS:
+2
+40
+{
+RADIO SENDER:
+Jake Bramble
+
+RADIO MESSAGE:
+What I have to.  You have command Captain Prior.
+
+}
+
+EVENT MINUTES AND SECONDS:
+2
+47
+{
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+What the hell is going on!
+
+}
+
+EVENT MINUTES AND SECONDS:
+2
+53
+{
+RADIO SENDER:
+Captain Mikhail Prior
+
+RADIO MESSAGE:
+Bramble has.. defected.. I am acting Captain.
+
+}
+
+
+EVENT MINUTES AND SECONDS:
+2
+58
+{
+RADIO SENDER:
+Captain Mikhail Prior
+
+RADIO MESSAGE:
+Just.. finish the mission.  Pirates incoming!
+
+SPAWN ENEMY SHIPS:
+{
+0
+Pirate Interceptor
+4
+Pirate Tel-Rith Fighter
+}
+SPAWN ANGLE:
+135
+}
+
+
+EVENT MINUTES AND SECONDS:
+3
+05
+{
+
+SPAWN ENEMY SHIPS:
+{
+3
+Pirate Interceptor
+0
+Pirate Tel-Rith Fighter
+}
+SPAWN ANGLE:
+135
+}
+
+
+EVENT MINUTES AND SECONDS:
+3
+40
+{
+RADIO SENDER:
+Captain Mikhail Prior
+
+RADIO MESSAGE:
+Enemy blockade ahead!
+
+SPAWN ENEMY SHIPS:
+{
+2
+Pirate Freighter
+0
+Pirate Corvette
+}
+SPAWN ANGLE:
+135
+}
+
+
+EVENT MINUTES AND SECONDS:
+4
+10
+{
+RADIO SENDER:
+Captain Mikhail Prior
+
+RADIO MESSAGE:
+We're almost there!
+
+SPAWN ENEMY SHIPS:
+{
+1
+Pirate Corvette
+0
+Pirate Freighter
+}
+SPAWN ANGLE:
+315
+
+SPAWN ENEMY SHIPS:
+{
+0
+Pirate Corvette
+1
+Pirate Freighter
+}
+SPAWN ANGLE:
+325
+
+SPAWN ENEMY SHIPS:
+{
+1
+Pirate Corvette
+0
+Pirate Freighter
+}
+SPAWN ANGLE:
+305
+
+SPAWN ENEMY SHIPS:
+{
+0
+Pirate Corvette
+1
+Pirate Freighter
+}
+SPAWN ANGLE:
+335
+
+SPAWN ENEMY SHIPS:
+{
+1
+Pirate Corvette
+0
+Pirate Freighter
+}
+SPAWN ANGLE:
+295
+
+Pirate Corvette
+}
+SPAWN ANGLE:
+345
+
+SPAWN ENEMY SHIPS:
+{
+0
+Pirate Corvette
+1
+Pirate Freighter
+}
+SPAWN ANGLE:
+285
+}
+
+
+EVENT MINUTES AND SECONDS:
+4
+16
+{
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+They're right behind us!
+}
+
+
+EVENT MINUTES AND SECONDS:
+4
+22
+{
+RADIO SENDER:
+Captain Mikhail Prior
+
+RADIO MESSAGE:
+Reinforcements are just ahead.  We can make it!
+}

@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Sniper Laser Pulse
+rect
+DRAW COLOR - R / G / B
+200
+255
+0
+SPEED - speed / rotation
+2500
+0
+POWER - damage / impulse
+14
+6000
+SIZE - length / width
+70
+3
+LIFETIME
+1.5
+DEATH EFFECT
+standard hit
+PFX - flying / hitting
+nothing
+gatling_laser_hit
+HITTING SFX - sound / volume
+impact_1
+0.06

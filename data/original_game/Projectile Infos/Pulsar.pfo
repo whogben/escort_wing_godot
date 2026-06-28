@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Pulsar
+pulsar
+DRAW COLOR - R / G / B
+255
+255
+0
+SPEED - speed / rotation
+700
+0
+POWER - damage / impulse
+3
+60000
+SIZE - length / width
+15
+1.2
+LIFETIME
+.5
+DEATH EFFECT
+standard hit
+PFX - flying / hitting
+nothing
+gatling_laser_hit
+HITTING SFX - sound / volume
+impact_1
+0.06

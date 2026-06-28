@@ -1,0 +1,29 @@
+WEAPON - name
+Forward Radar
+FACING - base / offset / spread
+none
+0
+0
+TURRETS - type / number / spacing
+none
+0
+0
+FIRING SEQUENCE - sequential or simultaneous
+none
+RANGE
+62
+CHARGES - max / wait
+0
+0
+FIRING DELAY
+0
+BULLET TYPE
+none
+SPECIAL
+radar
+FIRING PFX - particle
+nothing
+FIRING SFX - sound / volume / soundwaitmax
+nothing
+0
+0

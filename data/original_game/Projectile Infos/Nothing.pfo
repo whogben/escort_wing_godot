@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Nothing
+nothing
+DRAW COLOR - R / G / B
+0
+0
+0
+SPEED - speed / rotation
+0
+0
+POWER - damage / impulse
+0
+0
+SIZE - length / width
+0
+0
+LIFETIME
+0
+DEATH EFFECT
+none
+PFX - flying / hitting
+nothing
+nothing
+HITTING SFX - sound / volume
+nothing
+0

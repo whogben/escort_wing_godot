@@ -1,0 +1,649 @@
+// Escort Level File
+
+LEVEL NAME: 
+Eyes and Ears
+
+LEVEL DESC:
+High Command suspects that Tel Rith forces may try to circumvent our lines near Echo base.  Echo base is to be upgraded to a full intelligence awareness outpost with newer sensor equipment.  Escort the sensor equipment to Echo base - we will need every bit of it when we arrive.  Unfortunately most of our combat craft are busy, we can only spare two interceptors and one flak interceptor for this mission - so this should be a challenging.  Captain Bramble is unavailable for this mission, First Officer Mikhail Prior will direct the escort team.
+
+LEVEL WIN DESC:
+When the radar equipment was installed it revealed the Generals' worst fears.  In their blind spot thousands of ships waited in formation, and daily their numbers grew.  Making things more complicated, the ships were a mixture of Tel-Rith and Human.  Ships long thought to have been lost in battle were discovered among them.  A careful search revealed hundreds of desertions hidden as "missing in action" in the official records.
+
+LEVEL BACKGROUND:
+Ocean
+
+LEVEL GROUND CLOUD COVER:
+7
+
+LEVEL AIR CLOUD COVER:
+5
+
+LEVEL RGB:
+.8
+.6
+.4
+
+
+LEVEL SUCCESS MINUTES AND SECONDS:
+6
+30
+
+
+CONVOY HEADING DEGREES:
+300
+
+
+PLAYER SHIP:
+Flak Interceptor
+
+CONVOY ESCORT SHIPS:
+{
+2
+Interceptor
+1
+Flak Interceptor
+}
+
+
+LEVEL CONVOY SHIPS:
+{
+2
+Radar Freighter
+}
+
+CONVOY SHIPS MUST SURVIVE:
+{
+1
+Radar Freighter
+}
+
+
+
+
+
+
+LEVEL START SHIPS:
+{
+10
+Interceptor
+5
+Freighter
+}
+
+
+
+LEVEL END SHIPS:
+{
+12
+Interceptor
+10
+Freighter
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+0
+{
+SET MUSIC:
+No Return
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+2
+{
+RADIO SENDER:
+First Officer Mikhail Prior [Escort Team Leader]
+
+RADIO MESSAGE:
+We are entering enemy territory but they aren't expecting us.  We should face mostly patrols and stray ships.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+10
+{
+RADIO SENDER:
+Pilot Bob Jorrath [Escort Craft 2]
+
+RADIO MESSAGE:
+Medium showers in the morning, with scattered enemy attacks in the mid to late afternoon, followed by sunshine and beer.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+18
+{
+RADIO SENDER:
+F.O. Mikhail Prior
+
+RADIO MESSAGE:
+keep focused, enemy patrols inbound.  Protect the sensor craft, they aren't as tough as the transports we are used too.
+
+SPAWN ENEMY SHIPS:
+{
+4
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+-115
+
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+32
+{
+
+SPAWN ENEMY SHIPS:
+{
+4
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+165
+
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+2
+{
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+Didn't even spill my drink.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+10
+{
+RADIO SENDER:
+Captain Rilke [Sensor Craft Captain 1]
+
+RADIO MESSAGE:
+I'm detecting strong energy signals for the next 200 kilometers.  Most likely enemy sniper craft.
+
+SET MUSIC:
+Boglins
+
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+16
+{
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+Wha- Wha-at!
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+20
+{
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+2 Snipers ahead and 2 fighters ahead, with plenty more behind.  Keep the snipers distracted from the sensor craft.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+28
+{
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+There they are!
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+280
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Sniper
+}
+SPAWN ANGLE:
+320
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+00
+{
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+Looks like we got their attention - Tel Rith sniper teams inbound.  Protect the radio equipment.
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+1
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+300
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+15
+{
+
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+New attackers on radar on radar.
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+1
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+320
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+30
+{
+
+RADIO SENDER:
+Pilot Bob Jorrath
+
+RADIO MESSAGE:
+2 Tel Rith inbound.
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+}
+SPAWN ANGLE:
+90
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+}
+SPAWN ANGLE:
+-100
+}
+
+
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+45
+{
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+}
+SPAWN ANGLE:
+0
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+}
+SPAWN ANGLE:
+60
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+}
+SPAWN ANGLE:
+240
+
+SPAWN ENEMY SHIPS:
+{
+1
+Tel-Rith Sniper
+}
+SPAWN ANGLE:
+300
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+50
+{
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+We're surrounded - keep them off the convoy!
+}
+
+
+EVENT MINUTES AND SECONDS:
+3
+20
+{
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+0
+
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+3
+25
+{
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+180
+
+}
+
+
+EVENT MINUTES AND SECONDS:
+3
+30
+{
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+45
+
+}
+
+
+EVENT MINUTES AND SECONDS:
+4
+0
+{
+RADIO SENDER:
+Captain Rilke [Sensor Craft Captain 1]
+
+RADIO MESSAGE:
+I'm detecting something bad ahead.
+
+SET MUSIC:
+Duty Calls
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+4
+7
+{
+RADIO SENDER:
+Pilot Bob Jorath
+
+RADIO MESSAGE:
+Bad?  You meant to say relaxing.  Right?
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+4
+11
+{
+RADIO SENDER:
+Pilot Bob Jorath
+
+RADIO MESSAGE:
+Please?
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+4
+17
+{
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+Clear out the mines before the transports reach them, we can't afford to slow down.
+
+SPAWN ENEMY SHIPS:
+{
+10
+Mine
+}
+SPAWN ANGLE:
+300
+
+SPAWN ENEMY SHIPS:
+{
+5
+Mine
+}
+SPAWN ANGLE:
+310
+
+SPAWN ENEMY SHIPS:
+{
+5
+Mine
+}
+SPAWN ANGLE:
+290
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+4
+20
+{
+
+SPAWN ENEMY SHIPS:
+{
+15
+Mine
+}
+SPAWN ANGLE:
+300
+
+SPAWN ENEMY SHIPS:
+{
+5
+Mine
+}
+SPAWN ANGLE:
+305
+
+SPAWN ENEMY SHIPS:
+{
+5
+Mine
+}
+SPAWN ANGLE:
+295
+}
+
+
+EVENT MINUTES AND SECONDS:
+4
+35
+{
+
+SPAWN ENEMY SHIPS:
+{
+15
+Mine
+}
+SPAWN ANGLE:
+300
+
+}
+
+
+EVENT MINUTES AND SECONDS:
+4
+50
+{
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+We've got Tel-Rith elite forces teams inbound!  Keep them off the convoy and watch the mines!
+
+SPAWN ENEMY SHIPS:
+{
+15
+Mine
+}
+SPAWN ANGLE:
+300
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Elite Fighter
+1
+Tel-Rith Mini Elite Fighter
+}
+SPAWN ANGLE:
+120
+}
+
+
+EVENT MINUTES AND SECONDS:
+5
+30
+{
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+2 Elite teams incoming!  We are almost there!
+
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Elite Fighter
+1
+Tel-Rith Mini Elite Fighter
+}
+SPAWN ANGLE:
+210
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Elite Fighter
+1
+Tel-Rith Mini Elite Fighter
+}
+SPAWN ANGLE:
+30
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+5
+50
+{
+RADIO SENDER:
+FO Mikhail Prior
+
+RADIO MESSAGE:
+More incoming! Hold them off!
+
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Elite Fighter
+2
+Tel-Rith Mini Elite Fighter
+}
+SPAWN ANGLE:
+210
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Elite Fighter
+2
+Tel-Rith Mini Elite Fighter
+}
+SPAWN ANGLE:
+30
+}
+
+
+
+
+
+
+
+

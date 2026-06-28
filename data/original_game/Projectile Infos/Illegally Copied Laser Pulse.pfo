@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Illegally Copied Laser Pulse
+rect
+DRAW COLOR - R / G / B
+0
+0
+0
+SPEED - speed / rotation
+2000
+0
+POWER - damage / impulse
+2
+6000
+SIZE - length / width
+20
+2
+LIFETIME
+.2
+DEATH EFFECT
+standard hit
+PFX - flying / hitting
+nothing
+gatling_laser_hit
+HITTING SFX - sound / volume
+impact_1
+0.06

@@ -1,0 +1,37 @@
+SHIP - name / image name
+Data Probe
+transport
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+64
+300
+MOVEMENT - min speed / max speed / acceleration
+10
+200
+20
+ROTATION - max rotation speed / rotational acceleration
+30
+5
+SURVIVAL - max health
+2500
+AUTOMATIC WEAPONS
+Retrofitted Gatling Laser Turret
+DEATH EFFECT HEALTHS - smoking health / burning health
+1600
+700
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+small_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+1
+PLAYABLE
+0
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+0
+0

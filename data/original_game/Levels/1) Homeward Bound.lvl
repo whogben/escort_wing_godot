@@ -1,0 +1,409 @@
+// Escort Level File
+
+LEVEL NAME: 
+Homeward Bound
+
+LEVEL DESC:
+Crewman injured in the war against the Tel-Rith are to be evacuated in 6 transports.  In order to protect Protect the transports as they pass through Tel-Rith territory on their way to Alpha team, a medical fleet, your interceptor team will escort them.  You will fly flak anti-fighter support.
+
+LEVEL WIN DESC:
+Thankfully, the injured crewmen reached Alpha team.  A Tel-Rith spy was discovered among them - with a map of our defense line.  Amid fears that a Tel-Rith battle-fleet could circumvent our lines, key edge outposts that have hitherto been ignored are to be upgraded and reinforced.
+
+LEVEL BACKGROUND:
+Ocean
+
+LEVEL GROUND CLOUD COVER:
+25
+
+LEVEL AIR CLOUD COVER:
+8
+
+
+
+
+LEVEL SUCCESS MINUTES AND SECONDS:
+5
+00
+
+
+CONVOY HEADING DEGREES:
+240
+
+
+PLAYER SHIP:
+Flak Interceptor
+
+CONVOY ESCORT SHIPS:
+{
+4
+Interceptor
+}
+
+
+LEVEL CONVOY SHIPS:
+{
+6
+Freighter
+}
+
+CONVOY SHIPS MUST SURVIVE:
+{
+3
+Freighter
+}
+
+
+
+
+
+LEVEL START SHIPS:
+{
+5
+Flak Interceptor
+15
+Interceptor
+7
+Freighter
+7
+Plasma Frigate
+}
+
+
+
+LEVEL END SHIPS:
+{
+6
+Interceptor
+2
+Flak Interceptor
+4
+Plasma Frigate
+}
+
+
+
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+0
+{
+SET MUSIC:
+No Return
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+2
+{
+RADIO SENDER:
+Commander Mathias Riwa [Battle-Group Coordinator]
+
+RADIO MESSAGE:
+We're going to leave you here.  Good luck Escort Team - get those crewmen to Alpha team, they've done their duty.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+8
+{
+RADIO SENDER:
+Captain Jake Bramble [Escort Team Commander]
+
+RADIO MESSAGE:
+Acknowledged Commander.  Alright squadron - we're in the red zone now - weapons hot.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+30
+{
+RADIO SENDER:
+Officer Mikhail Prior [MilTel & Communications]
+
+RADIO MESSAGE:
+Hostile contacts:  Scout team - approx. 15 degrees.  ETA 18 seconds.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+36
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Protect the convoy at all costs.  Targeting computers on, nav locked.  
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+40
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Lets do this.
+
+SPAWN ENEMY SHIPS:
+{
+3
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+15
+
+RAISE ALARMS:
+3
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+20
+{
+RADIO SENDER:
+Mikhail
+
+RADIO MESSAGE:
+Captain - its just the tip of the asteroid!  Multiple small contacts, and a corvette!
+
+RAISE ALARMS:
+5
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+26
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+What's their bearing, and how much time have we got?
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+32
+{
+RADIO SENDER:
+Mikhail
+
+RADIO MESSAGE:
+Approximately 90 degrees, ETA 21 seconds.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+38
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Focus your fire on the corvette - don't let it close on the convoy.  Attack it from the rear and don't get too close to its turrets.
+
+SPAWN ENEMY SHIPS:
+{
+5
+Tel-Rith Fighter
+1
+Tel-Rith Corvette
+}
+SPAWN ANGLE:
+150
+}
+
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+25
+{
+RADIO SENDER:
+Mikhail
+
+RADIO MESSAGE:
+Bad news - enemy reinforcements approaching from the rear!  I'm reading 3 small contacts and 2 corvettes.  ETA 40 seconds
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+31
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Alright team - don't start praying just yet.  Just keep them off the convoy till we reach alpha-team.
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+37
+{
+RADIO SENDER:
+Mikhail
+
+RADIO MESSAGE:
+It's worse! There are 9 more small ships behind them!  ETA 80 seconds!
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+43
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Understood Officer, we might still just make alpha-team.  Everyone of you, hold firm.  Keep them off the convoy.
+}
+
+
+EVENT MINUTES AND SECONDS:
+2
+55
+{
+RADIO SENDER:
+Mikhail
+
+RADIO MESSAGE:
+Wave 1 sir - on radar now.
+
+SPAWN ENEMY SHIPS:
+{
+3
+Tel-Rith Fighter
+2
+Tel-Rith Corvette
+}
+SPAWN ANGLE:
+35
+
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+3
+01
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Engage the enemy!
+}
+
+
+
+
+EVENT MINUTES AND SECONDS:
+3
+47
+{
+
+SET MUSIC:
+Boglins
+
+RADIO SENDER:
+Mikhail
+
+RADIO MESSAGE:
+Wave 2 is here!
+
+SPAWN ENEMY SHIPS:
+{
+9
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+35
+
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+3
+53
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Hold firm!  Don't waste your lives!  Alpha team - what's your status?
+}
+
+
+
+
+EVENT MINUTES AND SECONDS:
+3
+59
+{
+RADIO SENDER:
+Commander Jen Halcyon - Alpha Team Coordinator
+
+RADIO MESSAGE:
+We're at full burn - hang in there Escort Team.
+}
+
+
+
+
+
+EVENT MINUTES AND SECONDS:
+4
+20
+{
+RADIO SENDER:
+Mikhail
+
+RADIO MESSAGE:
+Thank god!  Alpha team's on radar sir!  Reinforcements arriving!
+
+}
+
+
+
+
+EVENT MINUTES AND SECONDS:
+4
+50
+{
+RADIO SENDER:
+Captain Bramble
+
+RADIO MESSAGE:
+Why'd you bring fighters to my birthday party?  Hooah!
+
+}

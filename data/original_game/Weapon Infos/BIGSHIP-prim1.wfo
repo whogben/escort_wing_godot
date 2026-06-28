@@ -1,0 +1,29 @@
+WEAPON - name
+BIGSHIP-prim1
+FACING - base / offset / spread
+forwards
+0
+1
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+parallel array
+8
+4
+FIRING SEQUENCE - sequential or simultaneous
+sequential
+CHARGES - max / wait
+0
+0
+FIRING DELAY
+0.02
+BULLET TYPE
+Concentrated Laser Pulse
+SPECIALS
+FIRING PFX - particle
+nothing
+FIRING SFX - sound / volume / soundwaitmax
+super_gatling_laser
+0.15
+0.25

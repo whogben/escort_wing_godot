@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Afterburn
+nothing
+DRAW COLOR - R / G / B
+0
+0
+0
+SPEED - speed / rotation
+0
+0
+POWER - damage / impulse
+45
+10000
+SIZE - detonation range / explosion radius
+70
+70
+LIFETIME
+0
+DEATH EFFECT
+explosion
+PFX - flying / hitting
+nothing
+firebomb
+HITTING SFX - sound / volume
+RocketExplode
+0.1

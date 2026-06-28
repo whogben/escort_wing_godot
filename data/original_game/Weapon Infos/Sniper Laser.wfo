@@ -1,0 +1,34 @@
+WEAPON - name
+Sniper Laser
+FACING - base / offset / spread
+forwards
+0
+0
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+parallel array
+1
+0
+FIRING SEQUENCE - sequential or simultaneous
+sequential
+CHARGES - max / wait
+1
+2.5
+FIRING DELAY
+2.5
+BULLET TYPE
+Sniper Laser Pulse
+SPECIALS
+tracer
+3750
+255
+100
+0
+FIRING PFX - particle
+gatling_laser_fire
+FIRING SFX - sound / volume / soundwaitmax
+gatling_laser
+0.8
+0

@@ -1,0 +1,59 @@
+SHIP - name / image name
+BIGSHIP
+BIGSHIP
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+80
+1500
+MOVEMENT - min speed / max speed / acceleration
+30
+600
+40
+ROTATION - max rotation speed / rotational acceleration
+90
+100
+SURVIVAL - max health
+500
+PRIMARY WEAPONS
+BIGSHIP-prim1
++perpendicular_offset=-18
++turretSpacing=-4
+BIGSHIP-prim1
++perpendicular_offset=18
++turretSpacing=4
+BIGSHIP-prim2
+SECONDARY WEAPONS
+BIGSHIP-seco
++angular_offset=-90
++perpendicular_offset=-50
+BIGSHIP-seco
++angular_offset=90
++perpendicular_offset=50
+AUTOMATIC WEAPONS
+BIGSHIP-auto1
++perpendicular_offset=-50
+BIGSHIP-auto1
++perpendicular_offset=50
+BIGSHIP-auto2
++perpendicular_offset=-60
+BIGSHIP-auto2
++perpendicular_offset=60
+DEATH EFFECT HEALTHS - smoking health / burning health
+200
+100
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+small_smoke_puff
+small_ship_fire
+mine_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+3
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+0
+0

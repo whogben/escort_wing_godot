@@ -1,0 +1,39 @@
+WEAPON - name
+BIGSHIP-auto2
+FACING - base / offset / spread
+forwards
+0
+1
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+parallel array
+2
+30
+FIRING SEQUENCE - sequential or simultaneous
+sequential
+CHARGES - max / wait
+0
+0
+FIRING DELAY
+0.08
+BULLET TYPE
+Ineffecient Laser Pulse
+SPECIALS
+slow turret
+150
+0
+0
+0
+image:double_turret
+0
+255
+255
+255
+FIRING PFX - particle
+gatling_laser_fire
+FIRING SFX - sound / volume / soundwaitmax
+gatling_laser
+0.05
+0

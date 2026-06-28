@@ -1,0 +1,41 @@
+SHIP - name / image name
+Radar Freighter
+transport
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+64
+1000
+MOVEMENT - min speed / max speed / acceleration
+10
+100
+20
+ROTATION - max rotation speed / rotational acceleration
+30
+5
+SURVIVAL - max health
+250
+PRIMARY WEAPONS
+Radar
++forward_offset=62
+SECONDARY WEAPONS
+Radar
++forward_offset=-55
+DEATH EFFECT HEALTHS - smoking health / burning health
+100
+50
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+small_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+1
+PLAYABLE
+0
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+0
+0

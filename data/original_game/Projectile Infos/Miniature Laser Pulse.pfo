@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Miniature Laser Pulse
+rect
+DRAW COLOR - R / G / B
+255
+155
+0
+SPEED - speed / rotation
+400
+0
+POWER - damage / impulse
+1.5
+6000
+SIZE - length / width
+10
+1.4
+LIFETIME
+.3
+DEATH EFFECT
+standard hit
+PFX - flying / hitting
+nothing
+gatling_laser_hit
+HITTING SFX - sound / volume
+impact_1
+0.06

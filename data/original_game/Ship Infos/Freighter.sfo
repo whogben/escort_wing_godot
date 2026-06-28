@@ -1,0 +1,37 @@
+SHIP - name / image name
+Freighter
+transport
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+64
+1000
+MOVEMENT - min speed / max speed / acceleration
+10
+100
+20
+ROTATION - max rotation speed / rotational acceleration
+30
+5
+SURVIVAL - max health
+250
+AUTOMATIC WEAPONS
+Retrofitted Gatling Laser Turret
+DEATH EFFECT HEALTHS - smoking health / burning health
+125
+80
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+small_smoke_puff
+small_ship_fire
+freighter_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+1
+PLAYABLE
+0
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+0
+0

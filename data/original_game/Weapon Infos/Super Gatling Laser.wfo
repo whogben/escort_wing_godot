@@ -1,0 +1,29 @@
+WEAPON - name
+Super Gatling Laser
+FACING - base / offset / spread
+forwards
+0
+5
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+parallel array
+2
+4
+FIRING SEQUENCE - sequential or simultaneous
+sequential
+CHARGES - max / wait
+0
+0
+FIRING DELAY
+0.05
+BULLET TYPE
+Concentrated Laser Pulse
+SPECIALS
+FIRING PFX - particle
+gatling_laser_fire
+FIRING SFX - sound / volume / soundwaitmax
+super_gatling_laser
+0.15
+0.25

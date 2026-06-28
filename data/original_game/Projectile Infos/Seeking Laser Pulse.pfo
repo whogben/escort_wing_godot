@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Seeking Laser Pulse
+rect
+DRAW COLOR - R / G / B
+255
+0
+0
+SPEED - speed / rotation
+600
+130
+POWER - damage / impulse
+3
+6000
+SIZE - length / width
+15
+1.2
+LIFETIME
+2
+DEATH EFFECT
+standard hit
+PFX - flying / hitting
+nothing
+gatling_laser_hit
+HITTING SFX - sound / volume
+impact_1
+0.06

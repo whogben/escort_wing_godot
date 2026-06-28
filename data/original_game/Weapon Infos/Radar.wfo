@@ -1,0 +1,39 @@
+WEAPON - name
+Radar
+FACING - base / offset / spread
+forwards
+0
+0
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+angular array
+21
+3
+FIRING SEQUENCE - sequential or simultaneous
+none
+CHARGES - max / wait
+0
+0
+FIRING DELAY
+0
+BULLET TYPE
+none
+SPECIALS
+radar
+10
+255
+255
+255
+tracer
+100000
+50
+100
+200
+FIRING PFX - particle
+nothing
+FIRING SFX - sound / volume / soundwaitmax
+nothing
+0
+0

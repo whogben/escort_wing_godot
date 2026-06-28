@@ -1,0 +1,34 @@
+WEAPON - name
+Afterburner
+FACING - base / offset / spread
+forwards
+0
+0
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+parallel array
+1
+0
+FIRING SEQUENCE - sequential or simultaneous
+sequential
+CHARGES - max / wait
+20
+0.3
+FIRING DELAY
+0.05
+BULLET TYPE
+Afterburn
+SPECIALS
+recoil
+2000
+0
+0
+0
+FIRING PFX - particle
+nothing
+FIRING SFX - sound / volume / soundwaitmax
+nothing
+0
+0

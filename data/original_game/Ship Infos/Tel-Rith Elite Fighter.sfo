@@ -1,0 +1,41 @@
+SHIP - name / image name
+Tel-Rith Elite Fighter
+enemy_elite_fighter
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+22
+60
+MOVEMENT - min speed / max speed / acceleration
+100
+450
+400
+ROTATION - max rotation speed / rotational acceleration
+200
+400
+SURVIVAL - max health
+54
+PRIMARY WEAPONS
+Gatling Pulsar
+SECONDARY WEAPONS
+Afterburner
+DEATH EFFECT HEALTHS - smoking health / burning health
+20
+8
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+tiny_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+2
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+30
+30
+
+// was 300 move accel., 300 rotation accel.

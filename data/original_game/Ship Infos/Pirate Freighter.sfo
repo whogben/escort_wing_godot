@@ -1,0 +1,54 @@
+SHIP - name / image name
+Pirate Freighter
+pirate_transport
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+64
+1000
+MOVEMENT - min speed / max speed / acceleration
+30
+200
+50
+ROTATION - max rotation speed / rotational acceleration
+60
+100
+SURVIVAL - max health
+400
+AUTOMATIC WEAPONS
+Retrofitted Gatling Laser Turret
++perpendicular_offset=7
++forward_offset=-11
+Retrofitted Gatling Laser Turret
++perpendicular_offset=-7
++forward_offset=-11
+Retrofitted Gatling Laser Turret
++perpendicular_offset=7
++forward_offset=-30
+Retrofitted Gatling Laser Turret
++perpendicular_offset=-7
++forward_offset=-30
+Retrofitted Gatling Laser Turret
++perpendicular_offset=7
++forward_offset=-49
+Retrofitted Gatling Laser Turret
++perpendicular_offset=-7
++forward_offset=-49
+DEATH EFFECT HEALTHS - smoking health / burning health
+200
+100
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+small_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+3
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+20
+30

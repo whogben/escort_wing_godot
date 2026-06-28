@@ -1,0 +1,29 @@
+WEAPON - name
+Javelin Rocket Array
+FACING - base / offset / spread
+forwards
+0
+4
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+parallel array
+2
+30
+FIRING SEQUENCE - sequential or simultaneous
+sequential
+CHARGES - max / wait
+12
+0.5
+FIRING DELAY
+0.1
+BULLET TYPE
+Javelin Rocket
+SPECIALS
+FIRING PFX - particle
+gatling_laser_fire
+FIRING SFX - sound / volume / soundwaitmax
+RocketFire
+0.05
+0

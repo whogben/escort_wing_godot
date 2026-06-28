@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Railgun Bullet
+rect
+DRAW COLOR - R / G / B
+0
+255
+0
+SPEED - speed / rotation
+2500
+0
+POWER - damage / impulse
+5
+10000
+SIZE - length / width
+10
+1.8
+LIFETIME
+.2
+DEATH EFFECT
+standard hit
+PFX - flying / hitting
+nothing
+gatling_laser_hit
+HITTING SFX - sound / volume
+impact_1
+0.06

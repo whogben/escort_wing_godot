@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bm1qqf77rk4o3"]
+
+[ext_resource type="Script" uid="uid://kj6w5webvn30" path="res://tests/test_ships.gd" id="1_y0pc8"]
+[ext_resource type="Script" uid="uid://bpmqb2e43u06a" path="res://scripts/ship.gd" id="2_n1rd6"]
+[ext_resource type="Script" uid="uid://8iuwqupnsp52" path="res://scripts/controllers/human_controller.gd" id="3_n1rd6"]
+
+[node name="TestShips" type="Node2D" unique_id=1334645392]
+script = ExtResource("1_y0pc8")
+
+[node name="Ship" type="Node2D" parent="." unique_id=1399759515]
+position = Vector2(541, 317)
+script = ExtResource("2_n1rd6")
+info_name = "Flak Interceptor"
+metadata/_custom_type_script = "uid://bpmqb2e43u06a"
+
+[node name="HumanController" type="Node" parent="Ship" unique_id=700255338]
+script = ExtResource("3_n1rd6")
+metadata/_custom_type_script = "uid://8iuwqupnsp52"

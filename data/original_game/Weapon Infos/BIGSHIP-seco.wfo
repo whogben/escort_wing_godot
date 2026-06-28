@@ -1,0 +1,29 @@
+WEAPON - name
+BIGSHIP-seco
+FACING - base / offset / spread
+forwards
+0
+1
+OFFSET - front-back / left-right
+0
+0
+TURRETS - type / number / spacing
+parallel array
+5
+25
+FIRING SEQUENCE - sequential or simultaneous
+simultaneous
+CHARGES - max / wait
+2
+7
+FIRING DELAY
+0.3
+BULLET TYPE
+Flak Rocket
+SPECIALS
+FIRING PFX - particle
+gatling_laser_fire
+FIRING SFX - sound / volume / soundwaitmax
+rocket_launch
+0.05
+0

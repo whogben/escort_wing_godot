@@ -1,0 +1,41 @@
+SHIP - name / image name
+Pirate Interceptor
+pirate_interceptor
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+16
+20
+MOVEMENT - min speed / max speed / acceleration
+90
+420
+200
+ROTATION - max rotation speed / rotational acceleration
+140
+550
+SURVIVAL - max health
+42
+PRIMARY WEAPONS
+Pirate Gatling
+SECONDARY WEAPONS
+Pirate Gatling
+DEATH EFFECT HEALTHS - smoking health / burning health
+30
+15
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+tiny_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+3
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+60
+30
+
+//hp was 50

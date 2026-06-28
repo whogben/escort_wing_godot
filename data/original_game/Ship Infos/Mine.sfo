@@ -1,0 +1,37 @@
+SHIP - name / image name
+Mine
+mine
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+24
+2
+MOVEMENT - min speed / max speed / acceleration
+0
+0
+0
+ROTATION - max rotation speed / rotational acceleration
+0
+0
+SURVIVAL - max health
+3
+AUTOMATIC WEAPONS
+Mine Suicide
+DEATH EFFECT HEALTHS - smoking health / burning health
+2
+1
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+tiny_smoke_puff
+small_ship_fire
+mine_explosion
+DEATH SFX - dead explosion sound
+flak_explosion
+TEAM
+2
+PLAYABLE
+0
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+0
+0

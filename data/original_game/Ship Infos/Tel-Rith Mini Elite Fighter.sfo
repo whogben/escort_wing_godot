@@ -1,0 +1,41 @@
+SHIP - name / image name
+Tel-Rith Mini Elite Fighter
+fighter2
+DRAW COLOR - R / G / B
+255
+100
+100
+DYNAMICS - radius / mass
+18
+20
+MOVEMENT - min speed / max speed / acceleration
+100
+400
+400
+ROTATION - max rotation speed / rotational acceleration
+180
+400
+SURVIVAL - max health
+44
+PRIMARY WEAPONS
+Seeking Gatling Laser
+SECONDARY WEAPONS
+Gatling Laser
+DEATH EFFECT HEALTHS - smoking health / burning health
+17
+10
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+tiny_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+2
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+30
+30
+
+//was 50, 325, 150 on movement, 100, 140 on rotation, 25 on health

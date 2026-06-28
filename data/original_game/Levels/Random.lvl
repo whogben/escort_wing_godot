@@ -1,0 +1,88 @@
+// Escort Level File
+
+LEVEL NAME: 
+Escort
+
+LEVEL DESC:
+Escort the convoy for 5 minutes.
+
+LEVEL WIN DESC:
+You snatched life from the jaws of death - you and the convoy survived.  Excellent work %N!
+
+LEVEL BACKGROUND:
+Ocean
+
+<RANDOMIZE LEVEL BACKGROUND RGB>
+
+LEVEL GROUND CLOUD COVER:
+7
+
+LEVEL AIR CLOUD COVER:
+5
+
+
+
+
+LEVEL SUCCESS MINUTES AND SECONDS:
+5
+00
+
+
+CONVOY HEADING DEGREES:
+300
+
+
+PLAYER SHIP:
+Nothing
+
+CONVOY ESCORT SHIPS:
+{
+0
+Interceptor
+0
+Flak Interceptor
+}
+
+
+LEVEL CONVOY SHIPS:
+{
+0
+Radar Freighter
+}
+
+CONVOY SHIPS MUST SURVIVE:
+{
+0
+Radar Freighter
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+0
+{
+SET MUSIC:
+No Return
+}
+
+
+EVENT MINUTES AND SECONDS:
+60
+0
+{
+FADE BACKGROUND RGB:
+.06
+.06
+.12
+OVER TIME:
+5
+}
+
+
+EVENT MINUTES AND SECONDS:
+2
+46
+{
+SET MUSIC:
+Duty Calls
+}

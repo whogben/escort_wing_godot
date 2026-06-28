@@ -1,0 +1,38 @@
+SHIP - name / image name
+Super Interceptor
+fighter
+DRAW COLOR - R / G / B
+0
+255
+255
+DYNAMICS - radius / mass
+17
+25
+MOVEMENT - min speed / max speed / acceleration
+100
+380
+190
+ROTATION - max rotation speed / rotational acceleration
+140
+380
+SURVIVAL - max health
+70
+WEAPONS - primary weapon name / secondary weapon name
+Railgun
+Railgun
+DEATH EFFECT HEALTHS - smoking health / burning health
+30
+10
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+tiny_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+1
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+0
+0

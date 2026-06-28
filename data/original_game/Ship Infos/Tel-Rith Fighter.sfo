@@ -1,0 +1,39 @@
+SHIP - name / image name
+Tel-Rith Fighter
+fighter2
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+18
+20
+MOVEMENT - min speed / max speed / acceleration
+50
+325
+150
+ROTATION - max rotation speed / rotational acceleration
+100
+140
+SURVIVAL - max health
+72
+PRIMARY WEAPONS
+Gatling Laser
+SECONDARY WEAPONS
+Raking Laser
+DEATH EFFECT HEALTHS - smoking health / burning health
+40
+20
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+tiny_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+2
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+55
+70

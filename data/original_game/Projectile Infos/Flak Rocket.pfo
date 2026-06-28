@@ -1,0 +1,26 @@
+PROJECTILE - name / image
+Flak Rocket
+file:flak_rocket
+DRAW COLOR - R / G / B
+255
+255
+0
+SPEED - speed / rotation
+350
+0
+POWER - damage / impulse
+550
+300000
+SIZE - detonation range / explosion radius
+40
+200
+LIFETIME
+1
+DEATH EFFECT
+explosion
+PFX - flying / hitting
+missile_trail
+shrapnel_explosion
+HITTING SFX - sound / volume
+flak_explosion
+0.1

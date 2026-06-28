@@ -1,0 +1,41 @@
+SHIP - name / image name
+Plasma Frigate
+frigate
+DRAW COLOR - R / G / B
+255
+255
+255
+DYNAMICS - radius / mass
+45
+300
+MOVEMENT - min speed / max speed / acceleration
+75
+325
+160
+ROTATION - max rotation speed / rotational acceleration
+40
+100
+SURVIVAL - max health
+250
+PRIMARY WEAPONS
+Uber Pulsars
+AUTOMATIC WEAPONS
+Retrofitted Gatling Laser Turret
+DEATH EFFECT HEALTHS - smoking health / burning health
+100
+50
+DEATH PFX - smoking pfx / burning pfx / explosion pfx
+small_smoke_puff
+small_ship_fire
+large_ship_explosion
+DEATH SFX - dead explosion sound
+big_ship_explosion
+TEAM
+1
+PLAYABLE
+1
+RANDOM DYNAMICS - Escort Frequency - Assault Frequency
+20
+10
+
+// moving acceleration was 80

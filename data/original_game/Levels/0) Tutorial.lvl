@@ -1,0 +1,312 @@
+// Escort Level File
+
+LEVEL NAME: 
+Pilot's Training
+
+LEVEL DESC:
+Learn to pilot an interceptor fighter, equipped with Gatling lasers and flak rockets.
+
+LEVEL WIN DESC:
+Congratulations, you may be ready for a real mission!  You may choose this  tutorial again at any time if you desire further familiarization.
+
+LEVEL BACKGROUND:
+Ocean
+
+LEVEL GROUND CLOUD COVER:
+6
+
+LEVEL AIR CLOUD COVER:
+3
+
+
+
+
+LEVEL SUCCESS MINUTES AND SECONDS:
+2
+30
+
+
+CONVOY HEADING DEGREES:
+0
+
+
+PLAYER SHIP:
+Flak Interceptor
+
+CONVOY ESCORT SHIPS:
+{
+1
+Interceptor
+}
+
+
+LEVEL CONVOY SHIPS:
+{
+1
+Freighter
+}
+
+CONVOY SHIPS MUST SURVIVE:
+{
+1
+Freighter
+}
+
+
+
+
+
+LEVEL START SHIPS:
+{
+2
+Interceptor
+2
+Freighter
+}
+
+
+
+LEVEL END SHIPS:
+{
+3
+Interceptor
+3
+Freighter
+}
+
+
+
+
+
+
+EVENT MINUTES AND SECONDS:
+0
+2
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Welcome to flight-training %N!
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+5
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+As an escort, your goal is to protect the convoy until it reaches its destination.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+9
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+The time until the convoy reaches its destination is displayed in the bottom left of your heads up display (ETA:)
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+14
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Also in the bottom left of your HUD, is the radar display.  The radar displays nearby ships and categorizes them into colors.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+19
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Yellow indicates a member of the convoy - protect these ships!
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+24
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Green indicates another escort like yourself.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+29
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Blue indicates allied ships with other goals - like the fleet you left at the beginning, and the fleet you will rendezvous with when nearing the convoy destination.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+37
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+If you encounter enemies, they will display as red dots on the radar.  Engage them, but do not neglect the convoy.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+45
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+This is not very exciting, I apologize.  Lets get to weapons:
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+49
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+%KEY-FIRE1 = fire primary-weapon, %KEY-FIRE2 = fire secondary-weapon.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+54
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Secondary weapon charges (in this case rockets) are displayed at the bottom of the screen.
+}
+
+
+EVENT MINUTES AND SECONDS:
+0
+59
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Your flak rockets reload slowly, so in battle use them carefully.
+}
+
+
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+09
+{
+RADIO SENDER:
+Second Escort
+
+RADIO MESSAGE:
+Contact rear, looks like two fighters.  When they get closer, move to engage.
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+180
+}
+
+
+EVENT MINUTES AND SECONDS:
+1
+14
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+You should be able to handle this.  Keep them from attacking the transport.
+}
+
+
+
+
+EVENT MINUTES AND SECONDS:
+1
+50
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Don't rest yet, I'm detecting 4 more ahead of your position.
+}
+
+EVENT MINUTES AND SECONDS:
+1
+55
+{
+RADIO SENDER:
+Second Escort
+
+RADIO MESSAGE:
+Contact front.  Engaging the enemy.
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+-10
+
+SPAWN ENEMY SHIPS:
+{
+2
+Tel-Rith Fighter
+}
+SPAWN ANGLE:
+10
+}
+
+
+
+EVENT MINUTES AND SECONDS:
+2
+25
+{
+RADIO SENDER:
+Instructor
+
+RADIO MESSAGE:
+Great work! You are ready to take on a more dangerous mission.  
+}

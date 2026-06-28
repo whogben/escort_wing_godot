@@ -1,0 +1,70 @@
+< Particle Name >
+small_ship_fire
+< Display Type > (1 = point, 2 = square, 3 = oval, 4 = graphic)
+4
+< Blending > (ALPHABLEND, LIGHTBLEND or SHADEBLEND)
+LIGHTBLEND
+< Graphic Name > (remove or enter 'nothing' if the dispay Type is Not 4)
+small_fireball
+< Initial R, G, B > (start color of the particles)
+255
+255
+0
+< Final R, G, B > (end color of the particles)
+255
+0
+0
+< Min / Max Initial Scale > (in pixels for render types 1 through 3)
+0.300000000
+0.400000000
+< Min / Max Final Scale > (in pixels for render types 1 through 3)
+0.400000000
+0.600000000
+< Min / Max Initial Alpha > (1 = opaque, 0 = invisible, .5 = transparent)
+0.300000000
+0.500000000
+< Min / Max Final Alpha >
+0.00000000
+0.00000000
+< Min / Max Lifetime >
+0.200000000
+0.600000000
+< Min / Max Initial Speed >
+0.00000000
+50.0000000
+< Min / Max Acceleration >
+0.00000000
+0.00000000
+< Min / Max Initial Rotation >
+0.00000000
+360.000000
+< Min / Max Initial Rotation Speed >
+-50.0000000
+50.0000000
+< Min / Max Rotational Acceleration >
+0.00000000
+0.00000000
+< Min / Max Spawn Angle > (direction the particle is moving when spawned)
+-10.0000000
+10.0000000
+< Min / Max Spawn Location Deviation > (how far from the source a particle can spawn)
+0.00000000
+10.0000000
+< Min / Max Spawn Wait > (Time between particle spawns)
+0.00990000000
+0.00990000000
+< Min / Max Burst Spawn Count > (Amt of particles created on a burst)
+4
+1
+< X, Y Gravity >
+0.00000000
+0.00000000
+< X, Y Wind >
+0.00000000
+0.00000000
+< Particle Drag > (0 is none, 4 is a lot)
+0.00000000
+< Particle Burst Chance > (0-1, chance to produce other particles on death)
+0.200000000
+< Particle Created on Burst >
+small_smoke_puff
